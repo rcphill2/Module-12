@@ -9,4 +9,4 @@ This module was prepared by Sheida Moin, PhD Candidate in the Biological and Agr
 
 **Part 2: Complete homework: Mining Hurricane Harvey tweets**
 
-The homework assignment is described in the `text-mining-hurricane-harvey` file, available as both `.html` and `.pdf`. The data for your homework assignment is also included in the repository (`data/hurricane-harvey-tweets.csv`).
+The homework assignment is described in the `text-mining-hurricane-harvey` file, available as both `.html` and `.pdf`. The data for your homework assignment is too large to include on GitHub. Instead, you can download the file on Moodle. 
