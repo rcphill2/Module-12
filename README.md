@@ -1,5 +1,7 @@
 # Module 12: Text mining with stringr and tidytext
 
+This module was prepared by Sheida Moin, PhD Candidate in the Biological and Agricultural Engineering Department at NC State.
+
 **Part 1: Watch the lecture videos and complete the readings**
 - Video: [Text mining 101](https://youtu.be/CBHveqRlPyQ)
 - [R4DS Chapter 14.3 and 14.4 on Matching Patterns with Regular Expressions](https://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions)
