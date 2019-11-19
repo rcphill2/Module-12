@@ -11,7 +11,9 @@ library(lubridate)
 
 
 
+
 tweets <- read_csv("data/hurricane-harvey-tweets.csv")
+tweet <- read_csv("data/hurricane-harvey-tweets.csv")
 head(tweets)
 str(tweets)
 View(tweets)
@@ -46,6 +48,7 @@ tidy_tweets <- tweets %>%
   mutate(word = reorder(word,n))
 
 #Get top 20 words tweeted
+
 common_words <- top_n(tidy_tweets, 20)
 #Plot the 20 most common words
 common_words %>%
@@ -58,7 +61,13 @@ common_words %>%
 # SUbset tweets to look at tweets containing refinery or refineries
 
 refine_tweets <- tweets %>%
-  filter(str_detect(tweets, c("refinery", "refineries")))
+  filter(str_detect(tweet, c("refinery", "refineries")))
+
+refine_tweets %>%
+  unnest_tokens(word,tweet) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE) %>%
+  with(wordcloud(word, n, max.words =100))
 
 corpus <- tweets %>%
   unnest_tokens(word, tweet)
